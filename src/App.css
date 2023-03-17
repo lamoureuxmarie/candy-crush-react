@@ -1,6 +1,7 @@
-.qpp {
+.app {
   display: flex;
-  padding: 50px;
+  padding: 30px;
+  justify-content: center;
 }
 
 .game-board {
