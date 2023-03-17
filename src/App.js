@@ -34,8 +34,18 @@ export default function App() {
   }, [])
 
   return (
-    <div className="App">
-
+    <div className="app">
+      <div className="game-board">
+        {currentColourArrangement.map((candyColour, index) => (
+          // for each element in the array, create an img
+          <img
+            key={index}
+            // with a background colour of 'element colour name'
+            style={{backgroundColor: candyColour}}
+            // alt= 'candy'
+          />
+        ))}
+      </div>
     </div>
   );
 }
